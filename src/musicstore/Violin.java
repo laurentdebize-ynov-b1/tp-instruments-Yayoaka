@@ -1,19 +1,24 @@
 package musicstore;
 
 public class Violin extends StringInstrument {
-	private String archetBois;
+	private String woodenBow;
 	
-	public Violin(String archetBois, int nbcorde, String typebois, String tuneType, String brand, String model, float price, boolean state) {
-		super(nbcorde, typebois, tuneType, brand, model, price, state);
-		this.archetBois = archetBois;
+	public Violin(String woodenBow, int nbStrings, String woodType, String tuneType, int id, String brand, String model, float price, boolean state) {
+		super(nbStrings, woodType, tuneType, id, brand, model, price, state);
+		this.woodenBow = woodenBow;
 	}
 	
-	public String getArchetBois() {
-		return this.archetBois;
+	public String getWoodenBow() {
+		return this.woodenBow;
 	}
+	
+	public void setWoodenBow(String bow) {
+		this.woodenBow = bow;
+	}
+	
 	
 	public String toString() {
-	return "violon " + this.brand +
+	return "violon id " + this.id + " ,brand : " + this.brand +
 			  " : model " + this.model +
 			  ", accordage " + this.tuneType +
 			  ", date d'accordage " + this.tuneDate;

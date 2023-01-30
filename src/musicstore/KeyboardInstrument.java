@@ -1,15 +1,15 @@
 package musicstore;
 
 public class KeyboardInstrument extends Instrument{
-	private int nbTouches;
+	private int nbKeys;
 	
-	public KeyboardInstrument(int nbTouches, String brand, String model, float price, boolean state) {
+	public KeyboardInstrument(int nbKeys, String brand, String model, float price, boolean state) {
 		super(brand, model, price, state);
-		this.nbTouches = nbTouches;
+		this.nbKeys = nbKeys;
 
 	}
 	
-	public int getNbTouches() {
-		return this.nbTouches;
+	public int getNbKeys() {
+		return this.nbKeys;
 	}
 }

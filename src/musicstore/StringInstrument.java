@@ -4,24 +4,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class StringInstrument extends Instrument implements Tunable{
-	protected int nbcorde;
-	protected String typebois;
+	protected int nbStrings;
+	protected String woodType;
 	protected String tuneDate;
 	protected String tuneType;
 	
-	public StringInstrument(int nbcorde, String typebois, String tuneType, String brand, String model, float price, boolean state) {
-		super(brand, model, price, state);
-		this.nbcorde = nbcorde;
-		this.typebois = typebois;
+	public StringInstrument(int nbStrings, String woodType, String tuneType,int id , String brand, String model, float price, boolean state) {
+		super(id, brand, model, price, state);
+		this.nbStrings = nbStrings;
+		this.woodType = woodType;
 		this.tuneType = tuneType;
 	}
 	
-	public int getNbCorde() {
-		return this.nbcorde;
+	public int getNbStrings() {
+		return this.nbStrings;
 	}
 	
-	public String getTypeBois() {
-		return this.typebois;
+	public String getWoodType() {
+		return this.woodType;
 	}
 	
 	public String getTuneDate() {

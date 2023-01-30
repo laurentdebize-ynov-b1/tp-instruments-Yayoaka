@@ -1,18 +1,23 @@
 package musicstore;
 
 public class Instrument {
-	
+	protected int id;
 	protected String brand;
 	protected String model;
 	protected float price;
 	protected boolean state;
 	
 	
-	public Instrument(String brand, String model, float price, boolean state) {
+	public Instrument(int id, String brand, String model, float price, boolean state) {
+		this.id = id;
 		this.brand = brand;
 		this.model = model;
 		this.price = price;
 		this.state = state;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 	
 	public String getBrand() {
