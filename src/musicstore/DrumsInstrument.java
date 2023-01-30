@@ -1,11 +1,15 @@
 package musicstore;
 
 public class DrumsInstrument extends Instrument {
-	private boolean bismounted;
+	private boolean bIsMounted;
 	
-	public DrumsInstrument(boolean bismounted, String brand, String model, float price, boolean state) {
+	public DrumsInstrument(boolean bIsMounted, String brand, String model, float price, boolean state) {
 		super(brand, model, price, state);
-		this.bismounted = bismounted;
+		this.bIsMounted = bIsMounted;
 		
 	}
+	
+	public boolean getBIsMounted() {
+		return this.bIsMounted;
+	}	
 }

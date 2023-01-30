@@ -2,10 +2,10 @@ package musicstore;
 
 import java.util.ArrayList;
 
-public class DrumsCollection {
+public class ElectronicCollection {
 	private ArrayList<Object> listDrums;
 	
-	public DrumsCollection() {
+	public ElectronicCollection() {
 		listDrums = new ArrayList<Object>();
 	}
 	  

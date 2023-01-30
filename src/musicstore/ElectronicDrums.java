@@ -4,28 +4,26 @@ import java.util.ArrayList;
 
 public class ElectronicDrums extends DrumsInstrument implements Drums{
 	private boolean bIsConnected;
-	
+	ArrayList<Object> listDrums;
 	
 	public ElectronicDrums(boolean bIsConnected ,boolean bismounted, String brand, String model, float price, boolean state) {
 		super(bismounted, brand, model, price, state);
 		this.bIsConnected = bIsConnected;
 		
 		BassPad bassPad1 = new BassPad();
-		ArrayList<Object> listDrums = new ArrayList<Object>() ;
+		listDrums = new ArrayList<Object>() ;
 		//listDrums.addPercussion(bassPad1);
 		
-		listDrums.addPercussion((Object) 1800L);
+		listDrums.add((Object) 1800L);
         
         // Inserting Double value in arr
-		listDrums.addPercussion(6.0D);
+		listDrums.add(6.0D);
  
         //  Inserting Float value in arr
-		listDrums.addPercussion(1.99F);
+		listDrums.add(1.99F);
 		
 	}
-	
-	
-	
+		
 	
 	
 	public String toString() {
