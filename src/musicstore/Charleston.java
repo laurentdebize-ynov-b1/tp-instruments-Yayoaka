@@ -1,6 +1,6 @@
 package musicstore;
 
-public class BassPad extends ElectronicCollection {
+public class Charleston extends AccousticCollection {
 	
 	public void produceSound() {
 		System.out.println("POUM");
